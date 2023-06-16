@@ -28,6 +28,8 @@ int main()
 {
 	cin >> n >> m;
 	for (int i = 0; i < n; i++) cin >> a[i];
+	//n의 최대값 10만이므로 20만이 넘어가는 m 값은 고려하지 않아도 됨
+	//timeout 방지
 	if (m > 200000) cout << 0;
 	else{
 		for (int i = 0; i < n; i++)
